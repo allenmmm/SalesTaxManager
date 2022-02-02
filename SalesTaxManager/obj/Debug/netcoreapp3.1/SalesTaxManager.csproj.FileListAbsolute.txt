@@ -1,0 +1,17 @@
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\SalesTaxManager.exe
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.csprojAssemblyReference.cache
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.AssemblyInfoInputs.cache
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.AssemblyInfo.cs
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\SalesTaxManager.deps.json
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\SalesTaxManager.runtimeconfig.json
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\SalesTaxManager.runtimeconfig.dev.json
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\SalesTaxManager.dll
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\SalesTaxManager.pdb
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.csproj.CoreCompileInputs.cache
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.csproj.CopyComplete
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.dll
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.pdb
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.genruntimeconfig.cache

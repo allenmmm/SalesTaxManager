@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "vTcfHDZYmFcaUOwNKQU0AA4+1ZNQmEtroSRCGQ6FYUfJeiqGAwePQNCiRKuJSs2PIYl5t+iqd8jOtr9nBKi63Q==",
+  "success": true,
+  "projectFilePath": "D:\\Opportunities\\Earthware\\SalesTaxManager\\SalesTaxManager\\SalesTaxManager.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\allenm\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\allenm\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\allenm\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
