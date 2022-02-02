@@ -4,7 +4,7 @@ using System;
 using Xunit;
 using SalesTaxManager;
 
-namespace given_a_sales_tax_manager.execute.test
+namespace given_a_sales_tax_manager.test
 {
     public class when_launching_the_application
     {

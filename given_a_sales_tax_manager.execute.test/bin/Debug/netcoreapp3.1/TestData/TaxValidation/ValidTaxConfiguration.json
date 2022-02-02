@@ -1,0 +1,9 @@
+﻿{
+  "TaxParameters": [
+    {
+        "Basic": 10.0,
+        "Import": 5,
+        "Sales": 0.05
+    }
+  ]
+}

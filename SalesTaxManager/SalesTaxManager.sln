@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SalesTaxManager", "SalesTax
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{3FDCC038-DAF8-40C3-BCBB-83C3AFFCCDBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "given_a_sales_tax_manager.execute.test", "..\given_a_sales_tax_manager.execute.test\given_a_sales_tax_manager.execute.test.csproj", "{D7CD23A8-042C-4775-A1B4-EFDEDE8FB8B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "given_a_sales_tax_manager.test", "..\given_a_sales_tax_manager.execute.test\given_a_sales_tax_manager.test.csproj", "{D7CD23A8-042C-4775-A1B4-EFDEDE8FB8B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
