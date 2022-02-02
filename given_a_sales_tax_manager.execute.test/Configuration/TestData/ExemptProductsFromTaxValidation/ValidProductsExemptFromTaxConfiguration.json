@@ -1,0 +1,9 @@
+﻿{
+  "ProductsExcemptTax": [
+    {
+      "books": ["*"],
+      "foods" :  ["chocolate bar","chocolates"],
+      "medicines" :  ["headache pills"]
+    }
+  ]
+}

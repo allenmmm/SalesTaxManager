@@ -1,29 +1,28 @@
-﻿using System;
+﻿using SalesTaxManager.Entities;
+using SalesTaxManager.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace SalesTaxManager.Configuration
 {
-    public class TaxParameters
+    public class Codes
     {
         public double Basic { get; set; }
         public double Import { get; set; }
         public double Sales { get; set; }
     }
 
-    public class TaxContent: File<TaxParameters> 
+    public class TaxContent: File<Codes>
     {
-        public TaxParameters TaxParameters { get; private set; }
+   
+        public TaxRates TaxRates { get; private set; }
         public TaxContent(
-            string fileName) : base(fileName, "TaxParameters")
+            string fileName,
+             IConverter<TaxRates, Codes> converter) : base(fileName, "TaxParameters")
         {
-            TaxParameters = new TaxParameters()
-            {
-                Basic = _Data.First().Basic,
-                Import = _Data.First().Import,
-                Sales = _Data.First().Sales
-            };
+            TaxRates = converter.Convert(_Data.First());
         }
     }
 }

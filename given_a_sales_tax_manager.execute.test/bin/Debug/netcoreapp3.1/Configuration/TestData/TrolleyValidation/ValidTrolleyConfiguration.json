@@ -1,0 +1,23 @@
+﻿{
+  "Trolley": [
+    {
+      "Product": "book",
+      "Price": 12.49,
+      "Quantity": 1,
+      "Imported": false
+    },
+    {
+      "Product": "cd",
+      "Price": 14.99,
+      "Quantity": 1,
+      "Imported": false
+    },
+    {
+      "Product": "chocolate bar",
+      "Price": 0.85,
+      "Quantity": 1,
+      "Imported" :  false
+    }
+  ]
+}
+
