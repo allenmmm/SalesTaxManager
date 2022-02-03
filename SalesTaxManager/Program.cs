@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SalesTaxManager.Calculation;
+using SalesTaxManager.Configuration;
 
 namespace SalesTaxManager
 {
@@ -6,7 +7,24 @@ namespace SalesTaxManager
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var productsSource = new ProductsExemptFromTaxContent(
+                @"TestData\ProductsExemptFromTax.json",
+                new ProductsExemptFromTaxContentConverter());
+
+            var trolleySource = new TrolleyContent(
+                 @"TestData\Trolley.json",
+                 new TrolleyContentConverter());
+
+            var taxSource = new TaxContent(
+                   @"TestData\Tax.json",
+                   new TaxContentConverter());
+
+            var taxCalc = new TaxCalculator(
+                trolleySource.Trolley,
+                taxSource.TaxRates,
+                productsSource.ProductsExemptFromTax);
+
+            taxCalc.ToString();
         }
     }
 }

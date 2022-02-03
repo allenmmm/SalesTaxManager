@@ -1,9 +1,6 @@
 ﻿using SalesTaxManager.Entities;
 using SalesTaxManager.Interfaces;
-using SalesTaxManager.Utils;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SalesTaxManager.Configuration
 {

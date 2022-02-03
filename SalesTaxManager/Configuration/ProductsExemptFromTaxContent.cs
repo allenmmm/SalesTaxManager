@@ -1,9 +1,7 @@
 ﻿using SalesTaxManager.Entities;
 using SalesTaxManager.Interfaces;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SalesTaxManager.Configuration
 {
@@ -16,10 +14,10 @@ namespace SalesTaxManager.Configuration
 
     public class ProductsExemptFromTaxContent : File<ProductsContent>
     {
-        public ProductsExemptFromTax ProductsExemptFromTax { get; private set; }
+        public ProductsExemptFromSalesTax ProductsExemptFromTax { get; private set; }
         public ProductsExemptFromTaxContent(
             string fileName,
-            IConverter<ProductsExemptFromTax, ProductsContent> converter ) : base(fileName, "ProductsExcemptTax")
+            IConverter<ProductsExemptFromSalesTax, ProductsContent> converter ) : base(fileName, "ProductsExcemptTax")
         {
             ProductsExemptFromTax = converter.Convert(_Data.First());
         }

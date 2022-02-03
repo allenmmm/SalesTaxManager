@@ -26,3 +26,6 @@ D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3
 D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\obj\Debug\netcoreapp3.1\SalesTaxManager.csproj.CoreCompileInputs.cache
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\TestData\ProductsExemptFromTax.json
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\TestData\Tax.json
+D:\Opportunities\Earthware\SalesTaxManager\SalesTaxManager\bin\Debug\netcoreapp3.1\TestData\Trolley.json

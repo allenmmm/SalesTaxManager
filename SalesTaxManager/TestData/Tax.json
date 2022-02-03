@@ -1,0 +1,9 @@
+﻿{
+  "TaxParameters": [
+    {
+        "Sales": 10.0,
+        "Import": 5,
+        "SalesRoundingFactor": 0.05
+    }
+  ]
+}

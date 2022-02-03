@@ -5,34 +5,30 @@ using SalesTaxManager.Entities;
 using SalesTaxManager.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Xunit;
 
 namespace given_a_sales_tax_manager.configuration.test
 {
-    public class when_retrieving_trolleys
+    public class when_reading_trolleys
     {
-
         private readonly string _TaxValidationPath;
         private readonly Trolley _Trolley;
         private readonly IEnumerable<ItemContent> _ItemsEXP;
-        public when_retrieving_trolleys()
+        public when_reading_trolleys()
         {
             _TaxValidationPath = @"Configuration\TestData\TrolleyValidation\";
-
 
             _ItemsEXP = new List<ItemContent>()
                 {
                     new ItemContent(){
                         Imported = false,
-                        Price=10.67,
+                        Price=10.67m,
                         Product = "Cheese",
                         Quantity= 5
                     },
                     new ItemContent(){
                         Imported = true,
-                        Price=6.25,
+                        Price=6.25m,
                         Product = "Toast",
                         Quantity=99
                     },
@@ -44,16 +40,19 @@ namespace given_a_sales_tax_manager.configuration.test
         [Fact]
         public void then_get_tax_codes()
         {
+            //ARRANGE
             Mock<IConverterList<Trolley, ItemContent>> converterMOCK =
                 new Mock<IConverterList<Trolley, ItemContent>>();
 
             converterMOCK.Setup(fn => fn.Convert(It.IsAny<IEnumerable<ItemContent>>()))
                 .Returns(_Trolley);
 
+            //ACT
             var sut = new TrolleyContent(
                 $"{_TaxValidationPath}ValidTrolleyConfiguration.json",
                 converterMOCK.Object);
 
+            //ASSERT
             sut.Trolley.Should().BeEquivalentTo(_Trolley);
             converterMOCK.Verify(fn => 
                 fn.Convert(It.IsAny<IEnumerable<ItemContent>>()), Times.Once);
@@ -82,13 +81,13 @@ namespace given_a_sales_tax_manager.configuration.test
             {
                 new ItemContent(){
                      Imported = false,
-                     Price = 8.76,
+                     Price = 8.76m,
                      Product = "Guitars",
                      Quantity = 5
                 },
                 new ItemContent(){
                      Imported = true,
-                     Price = 18.76,
+                     Price = 18.76m,
                      Product = "Plus",
                      Quantity = 2
                 },
@@ -108,7 +107,7 @@ namespace given_a_sales_tax_manager.configuration.test
         [InlineData(false, 34.33, "cheese", -5)]
         public void then_detect_invalid_trolley(
             bool imported,
-            double price,
+            decimal price,
             string product,
             int quantity)
         {

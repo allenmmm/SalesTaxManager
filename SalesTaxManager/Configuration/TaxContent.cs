@@ -1,22 +1,18 @@
 ﻿using SalesTaxManager.Entities;
 using SalesTaxManager.Interfaces;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace SalesTaxManager.Configuration
 {
     public class Codes
     {
-        public double Basic { get; set; }
-        public double Import { get; set; }
-        public double Sales { get; set; }
+        public decimal Sales { get; set; }
+        public decimal Import { get; set; }
+        public decimal SalesRoundingFactor { get; set; }
     }
 
     public class TaxContent: File<Codes>
     {
-   
         public TaxRates TaxRates { get; private set; }
         public TaxContent(
             string fileName,

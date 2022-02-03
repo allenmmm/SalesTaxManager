@@ -123,3 +123,6 @@ D:\Opportunities\Earthware\SalesTaxManager\given_a_sales_tax_manager.execute.tes
 D:\Opportunities\Earthware\SalesTaxManager\given_a_sales_tax_manager.execute.test\bin\Debug\netcoreapp3.1\Configuration\TestData\TaxValidation\MissingSection.json
 D:\Opportunities\Earthware\SalesTaxManager\given_a_sales_tax_manager.execute.test\bin\Debug\netcoreapp3.1\Configuration\TestData\TaxValidation\ValidTaxConfiguration.json
 D:\Opportunities\Earthware\SalesTaxManager\given_a_sales_tax_manager.execute.test\bin\Debug\netcoreapp3.1\Configuration\TestData\TrolleyValidation\ValidTrolleyConfiguration.json
+D:\Opportunities\Earthware\SalesTaxManager\given_a_sales_tax_manager.execute.test\bin\Debug\netcoreapp3.1\TestData\ProductsExemptFromTax.json
+D:\Opportunities\Earthware\SalesTaxManager\given_a_sales_tax_manager.execute.test\bin\Debug\netcoreapp3.1\TestData\Tax.json
+D:\Opportunities\Earthware\SalesTaxManager\given_a_sales_tax_manager.execute.test\bin\Debug\netcoreapp3.1\TestData\Trolley.json

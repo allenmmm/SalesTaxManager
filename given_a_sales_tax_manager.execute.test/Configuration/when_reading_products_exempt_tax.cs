@@ -5,21 +5,19 @@ using SalesTaxManager.Entities;
 using SalesTaxManager.Interfaces;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Xunit;
 
 namespace given_a_sales_tax_manager.configuration.test
 {
-    public class when_retrieving_products_exempt_tax
+    public class when_reading_products_exempt_tax
     {
         private readonly string _TaxValidationPath;
-        private readonly ProductsExemptFromTax _ProductsExemptFromTaxEXP;
-        public when_retrieving_products_exempt_tax()
+        private readonly ProductsExemptFromSalesTax _ProductsExemptFromTaxEXP;
+        public when_reading_products_exempt_tax()
         {
             _TaxValidationPath = @"Configuration\TestData\ExemptProductsFromTaxValidation\";
 
-            _ProductsExemptFromTaxEXP = new ProductsExemptFromTax(
+            _ProductsExemptFromTaxEXP = new ProductsExemptFromSalesTax(
                 new ProductsContent()
                 {
                     Books = new List<string>() { "this book", "that book" },
@@ -32,8 +30,8 @@ namespace given_a_sales_tax_manager.configuration.test
         public void then_get_products_excempt_from_tax()
         {
             //ARRANGE
-            Mock<IConverter<ProductsExemptFromTax, ProductsContent>> converterMOCK =
-                new Mock<IConverter<ProductsExemptFromTax, ProductsContent>>();
+            Mock<IConverter<ProductsExemptFromSalesTax, ProductsContent>> converterMOCK =
+                new Mock<IConverter<ProductsExemptFromSalesTax, ProductsContent>>();
              
  
             converterMOCK.Setup(fn =>
@@ -60,7 +58,7 @@ namespace given_a_sales_tax_manager.configuration.test
         {
             Action act = () => new ProductsExemptFromTaxContent(
                 $"{_TaxValidationPath}{invalidFile}",
-                It.IsAny<IConverter<ProductsExemptFromTax, ProductsContent>>()
+                It.IsAny<IConverter<ProductsExemptFromSalesTax, ProductsContent>>()
                 );
 
             act.Should().Throw<Exception>();
